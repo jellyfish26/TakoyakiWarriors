@@ -65,11 +65,12 @@ class MainActivity : AppCompatActivity() {
         when (result.responseCode) {
             LineApiResponseCode.SUCCESS -> {
                 // Access token storage, before implementation
-                val accessToken = result.lineCredential!!.accessToken.tokenString
+                // val accessToken = result.lineCredential!!.accessToken.tokenString
                 Log.e("INFO", "Login success")
                 val transitionIntent = Intent(this, HomeScreen::class.java)
                 transitionIntent.putExtra("line_profile", result.lineProfile)
                 transitionIntent.putExtra("line_credential", result.lineCredential)
+                Log.d("INFO", "profile: " + result.lineProfile + "\nlineCrendential: " + result.lineCredential)
                 startActivity(transitionIntent)
             }
 
