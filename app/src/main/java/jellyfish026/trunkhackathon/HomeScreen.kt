@@ -1,24 +1,36 @@
 package jellyfish026.trunkhackathon
 
-import android.app.Activity
+
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
+import android.support.v7.app.AppCompatActivity
 import android.view.KeyEvent
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.home_screen.*
 
-class HomeScreen: Activity() {
+class HomeScreen: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_screen)
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.frameLayout, HomeFragment())
+            .commit()
 
         navigation_view.setOnNavigationItemSelectedListener { item ->
             var message = ""
             when(item.itemId){
-                R.id.action_home -> message = "Home"
-                R.id.action_takoyaki -> message = "takoyaki!!"
+                R.id.action_home -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frameLayout, HomeFragment())
+                        .commit()
+                }
+                R.id.action_takoyaki -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frameLayout, TakoyakiFragment())
+                        .commit()
+                }
                 R.id.action_battle -> message = "battle!!"
             }
 
