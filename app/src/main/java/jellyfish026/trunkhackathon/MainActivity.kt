@@ -8,7 +8,10 @@ import com.linecorp.linesdk.Scope
 import com.linecorp.linesdk.auth.LineAuthenticationParams
 import com.linecorp.linesdk.widget.LoginButton
 import java.util.*
+import android.widget.Toast
+import com.linecorp.linesdk.auth.LineLoginResult
 import android.util.Log
+import com.linecorp.linesdk.LoginListener
 import com.linecorp.linesdk.LineApiResponseCode
 import com.linecorp.linesdk.auth.LineLoginApi
 
