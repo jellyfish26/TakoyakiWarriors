@@ -1,6 +1,7 @@
 package jellyfish026.trunkhackathon
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
@@ -31,7 +32,10 @@ class HomeScreen: AppCompatActivity() {
                         .replace(R.id.frameLayout, TakoyakiFragment())
                         .commit()
                 }
-                R.id.action_battle -> message = "bettle!!"
+                R.id.action_battle ->  {
+                    val intent = Intent(applicationContext, BattleActivity::class.java)
+                    startActivity(intent)
+                }
             }
 
             Toast.makeText(this,

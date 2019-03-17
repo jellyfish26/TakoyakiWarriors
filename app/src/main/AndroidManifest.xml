@@ -20,5 +20,6 @@
 
         </activity>
         <activity android:name=".TakoyakiDetailsActivity" android:theme="@style/MaterialTheme"/>
+        <activity android:name=".BattleActivity" android:theme="@style/MaterialTheme"/>
     </application>
 </manifest>
