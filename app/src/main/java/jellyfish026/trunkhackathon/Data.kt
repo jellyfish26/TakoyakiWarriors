@@ -10,4 +10,5 @@ object Data {
     var TP = 0
     var selectTakoyaki = arrayOf(0, 0, 0);
     var nowID = 0;
+    var returnValue = 0;
 }
