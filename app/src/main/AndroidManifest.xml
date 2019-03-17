@@ -19,5 +19,6 @@
         <activity android:name=".HomeScreen" android:theme="@style/MaterialTheme">
 
         </activity>
+        <activity android:name=".TakoyakiDetailsActivity" android:theme="@style/MaterialTheme"/>
     </application>
 </manifest>

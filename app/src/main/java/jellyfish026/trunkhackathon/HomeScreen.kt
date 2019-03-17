@@ -31,7 +31,7 @@ class HomeScreen: AppCompatActivity() {
                         .replace(R.id.frameLayout, TakoyakiFragment())
                         .commit()
                 }
-                R.id.action_battle -> message = "battle!!"
+                R.id.action_battle -> message = "bettle!!"
             }
 
             Toast.makeText(this,

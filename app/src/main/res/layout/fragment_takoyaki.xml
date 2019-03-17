@@ -4,10 +4,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <TextView
+    <GridView
+            android:id="@+id/gridview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#F1F1F1"
             android:gravity="center"
-            android:text="たこ焼き"/>
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth" />
 
 </android.support.constraint.ConstraintLayout>
