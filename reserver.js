@@ -14,7 +14,7 @@ class User {
             // DB
             const kintone = require('kintone-nodejs-sdk');
 
-            let APIToken = 'g3SAhjOSn0yK1ZCy0GfhIRavsyFuxSMlQ3ituLFc'; // your API Token
+            let APIToken = '教えられないよ！'; // your API Token
             // let basicUserName = 'xxxxx'; // basicAuth user name
             // let basicPassword = 'xxxxx'; // basicAuth password
             let kintoneAuth = new kintone.Auth();
@@ -105,7 +105,7 @@ class Takoyaki {
             // DB
             const kintone = require('kintone-nodejs-sdk');
 
-            let APIToken = 'LpNAwoy76y1CTsttrCUTBbS089zSCZ7rAW9guABJ'; // your API Token
+            let APIToken = '教えられないよ！'; // your API Token
             // let basicUserName = 'xxxxx'; // basicAuth user name
             // let basicPassword = 'xxxxx'; // basicAuth password
             let kintoneAuth = new kintone.Auth();
@@ -155,7 +155,7 @@ class Takoyaki {
             // DB
             const kintone = require('kintone-nodejs-sdk');
 
-            let APIToken = 'LpNAwoy76y1CTsttrCUTBbS089zSCZ7rAW9guABJ'; // your API Token
+            let APIToken = '教えられないよ！'; // your API Token
             // let basicUserName = 'xxxxx'; // basicAuth user name
             // let basicPassword = 'xxxxx'; // basicAuth password
             let kintoneAuth = new kintone.Auth();
@@ -227,7 +227,7 @@ class Shop {
             // DB
             const kintone = require('kintone-nodejs-sdk');
 
-            let APIToken = 'cUXq5MqmRM6LSy0sGFZL30shS7elnkvNca5E6NHR'; // your API Token
+            let APIToken = '教えられないよ！'; // your API Token
             // let basicUserName = 'xxxxx'; // basicAuth user name
             // let basicPassword = 'xxxxx'; // basicAuth password
             let kintoneAuth = new kintone.Auth();
@@ -283,8 +283,8 @@ login = new Login();
 
 // config
 const config = {
-    channelSecret: '8c11473806612de0da52070f1bde974c',
-    channelAccessToken: 'QNKC+CSRyL7EdJjl/uh5LzN1e6EfnJRHMj/cHEqIlvfNtHMXFLvcuifN6N5AwnGRcNfCBrca1suF8KLg5SjZkXl89bJmEKAsucAufqgZURtrinAcDfbcwAmHHWx7PvRJjB7v0SYxdC7bA38xYqFUPwdB04t89/1O/w1cDnyilFU='
+    channelSecret: 'あぁ^～心がぴょんぴょんするんじゃぁ^～',
+    channelAccessToken: 'あぁ^～心がぴょんぴょんするんじゃぁ^～'
 };
 
 // Web Controller
@@ -457,7 +457,7 @@ function handleEvent(event) {
         getNodeVer(uid, event.message.id);
         return client.replyMessage(event.replyToken, {
             type: 'text',
-            text: 'お待ちください \n URL: https://trompot.mydns.jp/slack/photo/' + event.message.id + '.jpg'
+            text: 'お待ちください \n URL: https://example.com/' + event.message.id + '.jpg'
         });
 
 
@@ -483,7 +483,7 @@ function handleEvent(event) {
 
 const getNodeVer = async (userId, msid) => {
     console.log("Goo");
-    const res = await axios.get('https://trompot.mydns.jp/slack/judge?img=' + msid);
+    const res = await axios.get('https://example.com/judge?img=' + msid);
 
     if (!res) {
         mes = 'たこ焼きじゃないね？'
